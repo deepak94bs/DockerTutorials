@@ -2,3 +2,13 @@
 2. docker images # List the Images
 3. docker info #Give Complete Information Of docker which is running
 4. df -h #give complete volume information
+5. docker ps #list of container running
+6. docker ps -a #list of as all available container
+7. cd /var/lib/docker #here you will find all the details of container and docker
+8. docker run hello-world # To start first hello -world container
+9. docker pull ubuntu:xenial #pull the ubuntu images
+10. docker run -i -t ubuntu:xenial /bin/bash  #run a docker in interactive in terminal on /bin/bash
+11. docker restart <alias_name_of_container>
+12. docker ps #running containers
+13. docker ps -a #list of all the running containers
+14. docker attach <alias_name_of-container>
