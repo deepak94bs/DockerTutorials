@@ -1,0 +1,4 @@
+1. docker version #Give Docker Client and Server Version
+2. docker images # List the Images
+3. docker info #Give Complete Information Of docker which is running
+4. df -h #give complete volume information
