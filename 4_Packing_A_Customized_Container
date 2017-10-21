@@ -1,0 +1,9 @@
+docker commit -m "Give the coments" -a "Name of Author" <Alias_Name_of_container> poddarmanish/usrssd:v1
+vi Dockerfile
+#This is a custom docker file
+FROM ubuntu:xenial
+MAINTAINER manishpoddar <manishkrpoddar@outlook.com>
+RUN apt-get update
+RUN apt-get install -y telnet openssh-server
+wq
+docker build -t ="poddarmanish" .
