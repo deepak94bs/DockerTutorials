@@ -1,0 +1,4 @@
+docker logs <Name_of_container> # Give details of commands run in container
+docker exec <Name_of_container> /bin/cat /etc/profile
+docker run ubuntu:xenial /bin/echo "Hello from Manish"
+docker run -d ubuntu:xenial /bin/bash -c "while true;do echo HELLO;sleep 1;done"
