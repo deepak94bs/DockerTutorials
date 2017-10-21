@@ -1,1 +1,6 @@
-docker run -itd ubuntu:xenial /bin/bash #run docker 
+docker run -itd ubuntu:xenial /bin/bash #run docker damonized
+docker inspect <docker_alias_name> # get the information of the docker
+docker search ubuntu #Search all images on docker hub
+docker search training/sinatra #Get specified contrainers
+
+
