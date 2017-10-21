@@ -1,0 +1,7 @@
+docker pull nginx #Pull docker repository
+yum install -y elink #text based browser
+docker run -d nginx:latest
+docker inspect <Name_Of_Docker>
+docker run -d -p 8080:80 latest:nginx #Expose port 8080 for nginx
+
+
