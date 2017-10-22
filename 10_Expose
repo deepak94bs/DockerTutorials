@@ -1,0 +1,17 @@
+# This image is based on CentOs 7 and will start apache service in each Container
+FROM centos:latest
+MAINTAINER manishkrpoddar@outlook.com
+
+RUN yum update -y
+RUN yum install -y httpd net-tools
+
+RUN echo "This is a custom index file build during the image creation ">/var/www/html/index.html
+
+EXPOSE 80
+ENTRYPOINT apachectl "-DFOREGROUND"
+
+
+
+
+docker build centos7/apache:v1 .
+docker run -d --name apacheweb1 -P centos7/apache:v1
