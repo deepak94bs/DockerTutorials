@@ -1,0 +1,17 @@
+mkdir Builds
+cd Builds
+mkdir RunAsUser
+cd RunAsUser
+docker images
+docker rmi <image_id>
+vi Dockerfile
+# Docker fie based on centos7 and non root previlaged user
+FROM centos:latest
+MAINTAINER manishkrpoddar@outlook.com
+RUN useradd -ms /bin/bash user
+USER user
+docker build -t centos/nonroot:v1 .
+docker run -it centos/nonroot:v1 /bin/bash
+docker start <Give_Container_name>
+docker exec -u 0 -it <Nmae_of_Container> /bin/bash
+
