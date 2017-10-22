@@ -1,0 +1,3 @@
+mkdir CustomMessage
+cd CustomMessage
+Note: Order of execution of docker file is liner from top to bottom and it had a default permission of root unless and until you change it
