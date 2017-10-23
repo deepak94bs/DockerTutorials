@@ -1,0 +1,6 @@
+# Docker Network :List and Inspect
+docker images
+ifconfig
+docker network ls
+docker network ls --no-trunc
+docker network inspect bridge
