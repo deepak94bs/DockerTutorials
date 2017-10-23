@@ -9,6 +9,8 @@ enabled=1
 gpgcheck=1
 gpgkey=https://yum.dockerproject.org/gpg
 
+yum update
+
 3.sudo yum -y install docker-engine
 4.sudo usermod -aG docker ec2-user
 4.systemctl start docker
