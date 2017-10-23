@@ -1,0 +1,22 @@
+# Manage Volumes
+cd Builds
+docker images
+docker run -it --name volumetest1 -v /mydata centos:latest /bin/bash
+df -h
+cd /mydat
+ll
+echo "this is a test data">>test.txt
+cd /var/lib/docker
+ll
+docker inspect volumetest1
+cd volumes
+ll
+mkdir MyHostDir
+
+echo "This is a bin file" >>app.bin
+echo "this is a local file" >>config.local
+echo "this is a message file" >>message.txt
+
+docker run -it --name voltest2 -v /root/Builds/MyhostDir:/mydata centos:latest /bin/bash
+
+df -h
