@@ -1,0 +1,11 @@
+#Docker Network : Create and Remove
+docker network create
+man docker-network-create
+docker network ls
+docker network create --subnet 10.1.0.0/24 --gateway 10.1.0.1 mybridge01
+docker network ls
+ifconfig
+docker network ls
+docker network rm mybridge01
+docker network ls
+docker network inspect mybridge01
