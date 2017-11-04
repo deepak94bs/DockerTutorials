@@ -1,0 +1,14 @@
+docker start backstabbing_easley
+docker ps
+docker ps -a
+docker exec backstabbing_easly
+which ps
+docker exec backstabbing_easly /bin/ps aux | grep bash
+docker top backstabbing_easly
+docker exec -i -t backstabbing_eaisley /bin/bash
+top
+docker ps
+apt-get upgrade
+docker stats backstabbing_easley
+apt-get install -y sshd
+apt-get install -y apache 2
