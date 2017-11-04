@@ -1,0 +1,20 @@
+  #Assign to Containers
+docker images
+docker network ls
+docker network create --subnet 10.1.0.0/16 --gateway 10.1.0.1 --ip-range=10.1.4.0/24 --driver=bridge --label=host4network bridge04
+docker ls
+docker network ls
+docker network inspect bridge04
+docker run -it --name nettest1 -net bridge04 centos:latest /bin/bash
+yum update
+yim install 
+yum install -y net-tools
+clar
+ifconfig
+netstat -rn
+clear
+exit
+
+docker run -it --name nettest2 --net bridge04 --ip 10.1.4.100 centos:latest /bin/bash
+yum update
+docker inspect nettest2 | grep IPAddr
