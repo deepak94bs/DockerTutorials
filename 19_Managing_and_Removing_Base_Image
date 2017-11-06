@@ -1,3 +1,19 @@
-
- 
-
+#Managing and Removing Base Images
+docker images
+docker ps -a
+docker rmi hello-world:latest
+docker images
+docker run -it ubuntu:xenial /bin/bash
+apt-get update
+apt-get upgrade
+docker ps -a
+dockr rmi ubuntu:xenial
+docker pull ubuntu:xenial
+docker run -it docker:xenial /bin/bash
+docker rmi ubunt:xenial
+docker rmi -f ubuntu:xenial
+docker attach naughty_wozniak
+docker rmi centos:centos7
+docker pull centos:centos7
+docker images
+docker rmi centos:latest
