@@ -1,0 +1,18 @@
+docker images
+docker pull centos:latest
+docker images
+docker run -it centos:latest /bin/bash
+yum update
+yum upgrade
+docker commit stupied_heisenberg centos:mine
+docker rm stupefied_heignberg
+docker images
+docker save centos:latest >centos.latest.tar
+docker save --output centos.latest.tar centos.latest
+ls -al centos.latest.tar
+docker images
+docker rmi centos:latest
+docker load < centos.latest.tar
+docker load --input centso.latest.tar
+gzip centos.latest.tar
+docker images
