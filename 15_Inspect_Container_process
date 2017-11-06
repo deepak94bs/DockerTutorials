@@ -12,3 +12,17 @@ apt-get upgrade
 docker stats backstabbing_easley
 apt-get install -y sshd
 apt-get install -y apache 2
+
+docker ps -a - q | wc -l
+docker ps -a
+docker rm <container_id>
+docker exec loving_leaveit /bin/cat /etc/profile
+sudo docker rm `docker ps -a -q`
+docker ps -a
+docker images
+docker run -it ubuntu:xenial /bin/bash
+apt-get update
+apt-get upgrade
+sudo systemctl stop docker
+docker ps -a
+systemctl retsart docker
