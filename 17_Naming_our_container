@@ -1,0 +1,13 @@
+Naming our Containers
+#Container name are generally in lowecase but you can gie upper case
+docker images
+docker ps -a
+docker run -itd ubuntu:xenial /bin/bash
+docker run -itd --name mycontainername ubuntu;xenial /bin/bash
+docker ps
+docker rename lonely_agresi myrenamecontainer
+docker ps -a
+docker rename <container_id> <my_new_id_name>
+docker rename reverent_nobel runningcontainerrename
+docker ps
+
