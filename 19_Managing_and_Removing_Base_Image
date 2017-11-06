@@ -1,0 +1,21 @@
+##Docker Events
+docker ps
+docker events
+docker events --since '1h'
+docker events
+docker exec -it mynewidname  /bin/bash
+docker attach mynewid
+docker kill mynewidname
+docker ps
+docker rename runningcontainername attachto
+docker events --filter event=attach/network/daemon 
+docker attach attachto
+docker exec attachto bin/bash
+docker ps
+docker events
+docker run -itd --name cont1 ubuntu:xenial
+docker stop container1
+docker events --filter event=attach --filter event=die --filter event=stop
+
+ 
+
