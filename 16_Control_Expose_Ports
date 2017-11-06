@@ -1,0 +1,17 @@
+##Contolling Port Exposure on Port
+docker image
+docker run -itd ngnix:latest
+docker inspect lonely_agensi | grep ip
+docker ps
+docker stop lonely_agensi
+docker run -itd -p 80 ngnix:latest
+docker ps
+docker ps
+docker stop jovial_snipper
+docker run -itd -p 8080:80 ngnix:latest
+docker run -itd -p 8080
+docker ps
+docker inspect elegent_base 
+docker ps
+elinks https://
+docker run -itd -p 127.0.0.1:8081:80 ngnix:latest
