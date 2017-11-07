@@ -1,0 +1,9 @@
+#Image History
+docker images
+docker history centos:mine
+docker history ngnix
+docker images
+docker history --no-trunction 
+docker history --no-trunction >output.txt
+docker history --quit ngnix
+docker history --quiet --no-truc ngnix
