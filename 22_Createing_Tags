@@ -1,0 +1,7 @@
+#Taking Control of our Tags
+docker images
+docker pull centos:centos7
+docker tag <image-id> mine/centos:v1.0
+docker tag mine/centos:v1.0 tcox2.mylabserver.com/v1.0.1b
+
+
