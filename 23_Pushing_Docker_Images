@@ -1,0 +1,10 @@
+#Pushing Docker to docker Hub
+docker login
+cat config.json
+docker logout
+docker images
+docker tag mine/centos:v1.0 poddarmanish/centos1
+docker login --username=poddarmanish --email=manishkrpoddar@outlook.com
+docker push poddarmanish/centos1
+docker images
+
