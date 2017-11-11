@@ -1,0 +1,43 @@
+  #building web farm for Development and Testing
+docker images
+docker pull centos:centos6
+docker images
+docker run -i -t centos:centos6 /bin/bash
+yum install wget
+wget -Uvh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+rpm -Uvh epel-relaease_____.rpm
+yum update
+yum install which sudo httpd php openssh-server
+whoami
+which service
+vi ~/.bashrc
+#Go to bottom
+#add serice to start
+/sbin/service httpd start
+/sbin/service sshd start
+exit
+docker commit <coontainer-id> centos6:baseweb
+docker images
+docker run -i -t centos6:baseweb /bin/bash
+service sshd start
+exit
+docker images
+docker rmi centos6:baseweb
+docker rm <container_id>
+docker rmi centos:baseweb
+
+docker start <container_id>
+docker attach <container_id>
+
+
+
+docker commit <container_id> centos6:baseweb
+docker images
+docker run -i -t centos6:baseweb /bin/bash
+
+ 
+
+
+
+
+
