@@ -74,6 +74,46 @@ docker run --name=externalweb -p 8081:80 -i -t -v /root/docker/dockerwww:/var/ww
 adduser manish
 
 
+##Part4
+
+docker images
+docker ps -a
+docker commit externalweb centos6:finalweb1
+docker images
+cd dockerwww
+git status
+mv dockerwww docker git
+cd ..
+git clone root@localhost:/docker/dockergit dockerwww
+docker images
+docker run -d -i -t --name=devweb1 -p 8081:80 -v /root/docker/dockerwww:/var/www/html centos:finalweb1 /bin/bash
+docker run -d -t --nameweb2 -p 8082:80 -v /root/dockerwww:/var/www/html centos6:finalweb1 /bin/bash
+
+#install ngnix on host
+yum install nginx
+service ngnix start
+cd /etc/ngnix
+cd sites-available
+vi default.conf
+upstream containerapp{
+	server 192.168.1.35:8081
+	server 192.168.1.35:8082
+}
+server {
+	listen *:80;
+	server_name 192.168.135;
+	index index.html index.php
+	error_log /var/log/nginx/localweb.loh;
+	access_log /var/log/nginx/localerr.log;
+	location/{
+		proxy_pass http://containerapp;
+	}
+}
+
+
+system restart nginx
+
+
 
 
 
