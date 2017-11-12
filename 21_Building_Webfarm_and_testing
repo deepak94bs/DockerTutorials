@@ -63,6 +63,17 @@ cd /var/www/html
 ls -al
 
 
+##Part3
+docker images
+docker commit webtest centos6:serverv1
+docker images
+docker run -i -t centos6:server1 /bin/bash
+df -h
+docker images
+docker run --name=externalweb -p 8081:80 -i -t -v /root/docker/dockerwww:/var/www/html centos6:server1 /bin/bash
+adduser manish
+
+
 
 
 
