@@ -35,6 +35,39 @@ docker commit <container_id> centos6:baseweb
 docker images
 docker run -i -t centos6:baseweb /bin/bash
 
+#####part2
+
+open source web design
+wget and download file
+make copy of file
+mkdir docker
+mkdir dockerwww
+unzip ../..bluefreedom3.zip
+docker run --name=webtest -i -t centos6:baseweb /bin/bash
+df -h
+cd /var/ww/html
+docker rm webtest
+docker run --name=webtest /root/docker/dockerww:var/www/html -i -t centos6:baseweb /bin/bash
+exit
+git init .
+git status
+git add *
+git commit -m "This is the initial commit to website"
+git status
+docker start webtest
+docker attach webtest
+ps ax | grep httpd
+df -h
+yum install git
+cd /var/www/html
+ls -al
+
+
+
+
+
+
+
  
 
 
