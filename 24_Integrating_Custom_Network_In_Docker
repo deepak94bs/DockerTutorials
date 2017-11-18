@@ -1,0 +1,23 @@
+docker images
+ps aux | grep docker
+systemct stop docker
+ps aux | grep docker
+ip link add br10 type bridge
+ip addr and 10.10.100.1/24 dev br10
+ip link set br10 up
+if config
+docker -d -b br10 & 
+docker images
+docker run -i -t centos:centos6 /bin/bash
+ifconfig
+ping 10.10.100.1
+cd /etc/
+vi rc.local
+cd network
+auto br10
+ifcae br10 inet statuc
+	addres 10.10.100.1
+	netmask 255.255.255.0
+	bridge_port dummy0
+	bridge_stp off
+	bridge_fd 0
